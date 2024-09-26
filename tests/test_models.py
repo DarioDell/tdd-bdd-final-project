@@ -169,7 +169,7 @@ def test_read_a_product(self):
         self.assertEqual(found.count(), count)
         for product in found:
             self.assertEqual(product.name, name)
-def test_find_by_availability(self):
+    def test_find_by_availability(self):
         """It should Find Products by Availability"""
         products = ProductFactory.create_batch(10)
         for product in products:
