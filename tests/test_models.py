@@ -137,7 +137,7 @@ def test_read_a_product(self):
         self.assertEqual(products[0].id, original_id)
         self.assertEqual(products[0].description, "testing")
 
-def test_delete_a_product(self):
+    def test_delete_a_product(self):
         """It should Delete a Product"""
         product = ProductFactory()
         product.create()
